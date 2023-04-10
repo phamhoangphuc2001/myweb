@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <link rel="stylesheet" href="assets/CSS/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />  
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div id="header">
+            <div class="header-search">
+                <div id="logo">
+                    <a href="/index.html">Sabo Travel</a>
+                </div>
+                <div class="input-search">
+                    <input type="text" placeholder="Từ khoá tìm kiếm..." >
+                    <a href=""><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a>
+                </div>
+                <div class="Signup-login">
+                    <a href="#">Đăng kí</a> 
+                    <a href="#">/</a>
+                    <a href="#">Đăng nhập</a>
+                </div>
+                <div id="toggle">
+                    <i class="fa-sharp fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <hr>
+            <nav>
+                <ul id="main-menu">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li>
+                        <a href="#">Giới thiệu</a>
+                    </li>
+                    <li>
+                        <a href="#">Du lịch trong nước</a>
+                        <div class="menu-child">
+                            <div class="menu-child-item">
+                                <h1>Miền Bắc</h1>
+                                <ul class="menu-child-list">
+                                    <li><a href="#">Hà Nội</a></li>
+                                    <li><a href="#">Sapa</a></li>
+                                    <li><a href="#">Vịnh Hạ Long</a></li>
+                                    <li><a href="#">Hà Giang</a></li>
+                                    <li><a href="#">Ninh Bình</a></li>
+                                    <li><a href="#">Bắc Giang</a></li>
+                                    <li><a href="#">Lạng Sơn</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-child-item">
+                                <h1>Miền Trung</h1>
+                                <ul class="menu-child-list">
+                                    <li><a href="#">Quảng Bình</a></li>
+                                    <li><a href="#">Huế</a></li>
+                                    <li><a href="#">Đà Nẵng</a></li>
+                                    <li><a href="#">Hà Tỉnh</a></li>
+                                    <li><a href="#">Bình Dịnh</a></li>
+                                    <li><a href="#">Nha Trang</a></li>
+                                    <li><a href="#">Phú Yên</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-child-item">
+                                <h1>Miền Nam</h1>
+                                <ul class="menu-child-list"> 
+                                    <li><a href="#">Đà Lạt</a></li>
+                                    <li><a href="#">Phan Thiết</a></li>
+                                    <li><a href="#">Vũng Tàu</a></li>
+                                    <li><a href="#">Đồng Tháp</a></li>
+                                    <li><a href="#">Phú Quốc</a></li>
+                                    <li><a href="#">Cần Thơ</a></li>
+                                    <li><a href="#">Cà Mau</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Du lịch nước ngoài</a>
+                        <div class="menu-child">
+                            <div class="menu-child-item">
+                                <h1>Châu Á</h1>
+                                <ul class="menu-child-list">
+                                    <li><a href="#">Hàn Quốc</a></li>
+                                    <li><a href="#">Nhật Bản</a></li>
+                                    <li><a href="#">Trung Quốc</a></li>
+                                    <li><a href="#">Thái Lan</a></li>
+                                    <li><a href="#">Singapore</a></li>
+                                    <li><a href="#">Malaysia</a></li>
+                                    <li><a href="#">Indonensia</a></li>
+                            </div>
+                            <div class="menu-child-item">
+                                <h1>Châu Âu</h1>
+                                <ul class="menu-child-list">
+                                    <li><a href="#">Ý</a></li>
+                                    <li><a href="#">Pháp</a></li>
+                                    <li><a href="#">Anh</a></li>
+                                    <li><a href="#">Đức</a></li>
+                                    <li><a href="#">Tây Ban Nha</a></li>
+                                    <li><a href="#">Hà lan</a></li>
+                                    <li><a href="#">Thuỵ Sĩ</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-child-item">
+                                <h1>Châu Mỹ</h1>
+                                <ul class="menu-child-list"> 
+                                    <li><a href="#">Mỹ</a></li>
+                                    <li><a href="#">Canada</a></li>
+                                    <li><a href="#">Agentina</a></li>
+                                    <li><a href="#">Brazil</a></li>
+                                    <li><a href="#">Colombia</a></li>
+                                    <li><a href="#">Chile</a></li>
+                                    <li><a href="#">Uruguay</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="news.html">Tin tức</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+            </nav>
+                <div class="image_slider">
+                    <div class="image_item">
+                        <div class="image">
+                                <img src="/cau-vang-da-nang-la-mot-trong-nhung-noi-dang-ghe-tham-nhat-nam-2018-theo-tap-chi-time.jpg" alt="Cầu Vàng">
+                        </div>
+                        <div class="text-bumble">
+                            <h4>Sabo travel - đi và trải nghiệm mọi thứ</h4>
+                            <h1>Đồng hành cùng bạn mọi nẻo đường</h1>
+                        </div>
+                        <div class="search-tour-content">
+                            <form action="" class="tour-content-form">
+                                <select name="" id="">
+                                    <option value="#">Chọn loại hình tour</option>
+                                    <option value="#">Tour trong nước</option>
+                                    <option value="#">Tour nước ngoài</option>
+                                </select>
+                                <select name="" id="">
+                                    <option value="#">Chọn địa điểm</option>
+                                </select>
+                                <input type="number" min="1" placeholder="Bạn đi bao nhiêu người">
+                                <input type="date">
+                                <input type="date">
+                                <button>Tìm kiếm</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="image_item">
+                        <div class="image">
+                                <img src="/dg_160519_du-lich-da-nang.jpg" alt="Cầu rồng">
+                        </div>
+                        <div class="text-bumble">
+                            <h4>Sabo travel - đi và trải nghiệm mọi thứ</h4>
+                            <h1>Đồng hành cùng bạn mọi nẻo đường</h1>
+                        </div>
+                        <div class="search-tour-content">
+                            <form action="" class="tour-content-form">
+                                <select name="" id="">
+                                    <option value="#">Chọn loại hình tour</option>
+                                    <option value="#">Tour trong nước</option>
+                                    <option value="#">Tour nước ngoài</option>
+                                </select>
+                                <select name="" id="">
+                                    <option value="#">Chọn địa điểm</option>
+                                </select>
+                                <input type="number" min="1" placeholder="Bạn đi bao nhiêu người">
+                                <input type="date">
+                                <input type="date">
+                                <button>Tìm kiếm</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="image_item">
+                        <div class="image">
+                                <img src="/lanterns-in-the-market.-pc.-urlaubsguru.de_-1.jpg" alt="Hội An">
+                        </div>
+                        <div class="text-bumble">
+                            <h4>Sabo travel - đi và trải nghiệm mọi thứ</h4>
+                            <h1>Đồng hành cùng bạn mọi nẻo đường</h1>
+                        </div>
+                        <div class="search-tour-content">
+                            <form action="" class="tour-content-form">
+                                <select name="" id="">
+                                    <option value="#">Chọn loại hình tour</option>
+                                    <option value="#">Tour trong nước</option>
+                                    <option value="#">Tour nước ngoài</option>
+                                </select>
+                                <select name="" id="">
+                                    <option value="#">Chọn địa điểm</option>
+                                </select>
+                                <input type="number" min="1" placeholder="Bạn đi bao nhiêu người">
+                                <input type="date">
+                                <input type="date">
+                                <button>Tìm kiếm</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <article>
+            <div class="introduce-danang">
+                <h1>Tháng 4 này, bạn đã có dự định đi khám phá vùng đất nào chưa?</h1>
+                <span>
+                    Hãy thử một lần đến với Đà Nẵng, nơi đây được mệnh danh là thành phố đáng đến với dòng sông Hàn thơ mộng với cây cầu Rồng biểu tượng của 
+                    Thành phố biển du lịch Đà Nẵng - nơi mà quý khách có thể cảm nhận được sự pha trộn giữa khí hậu miền Bắc, miền Nam.
+                    Ngoài ra Đà Nẵng còn sở hữu nhiều danh lam thắng cảnh làm say lòng người như:
+                    Bà Nà Hills, Bán Đảo Sơn Trà, Ngũ Hành Sơn, Đà Nẵng, phố cổ Hội An,...
+                </span>
+            </div>
+            <div class="text-tour-famous">
+                <h1>Điểm đến không thể bỏ qua</h1>
+                <h2>Chiêm ngưỡng tuyệt tác thiên nhiên</h2>
+                <div class="tour-famous-list">
+                    <div class="text-tour-item">
+                        <div class="text-tour-img">
+                            <img src="/bana.webp" alt="Bà Nà Hill">
+                        </div>
+                        <div class="text-tour">
+                            <div class="tour-content">
+                                <h3>Bà Nà Hills</h3>
+                                <h4>Xứ sở thần tiên</h4>
+                            </div>
+                            <p>
+                                - Bà Nà Hills là quần thể du lịch nghỉ dưỡng kết hợp vui chơi giải trí đẳng cấp bậc nhất Việt Nam cách trung tâm thành phố Đà Nẵng hơn 20 km. <br>
+                                - Bà Nà Hills được mênh danh là chốn bồng lai tiên cảnh, sở hữu khí hậu tuyệt vời cùng cảnh quan thiên nhiên kỳ thú. <br>
+                                - Đến với Bà Nà Hills để trải nghiệm khí hậu 4 mùa trong một ngày cùng nhiều hoạt động lễ hội, vui chơi giải trí, ẩm thực hấp dẫn đa dạng.
+                            </p>
+                            <a href="">Chi Tiết</a>
+                        </div>
+                    </div>
+                    <div class="text-tour-item">
+                        <div class="text-tour-img">
+                            <img src="https://culaochamtour.com/wp-content/uploads/2020/09/du-lich-cu-lao-cham-island.jpg" alt="Cù lao Chàm">
+                        </div>
+                        <div class="text-tour">
+                            <div class="tour-content">
+                                <h3>Cù Lao Chàm</h3>
+                                <h4>Hòn ngọc xanh giữa biển Đông</h4>
+                            </div>
+                            <p>
+                                - Cù Lao Chàm là một hòn đảo thuộc địa phận của xã Tân Hiệp, thành phố Hội An, tỉnh Quảng Nam, nằm cách biển Cửa Đại về khoảng 16km. <br>
+                                - Hiện Cù Lao Chàm được UNESCO công nhận là khu dự trữ sinh quyển của thế giới. <br>
+                                - Những địa điểm du lịch nổi tiếng ở nơi đây: Giếng cổ Champa, Lặn ngắm san hô, khu bảo tồn biển,... <br>
+                            </p>
+                            <a href="">Chi Tiết</a>
+                        </div>
+                    </div>
+                    <div class="text-tour-item">
+                        <div class="text-tour-img">
+                            <img src="https://danangaz.com/wp-content/uploads/2018/09/6.jpg" alt="Biển Mỹ Khê">
+                        </div>
+                        <div class="text-tour">
+                            <div class="tour-content middle">
+                                <h3>Biển Mỹ Khê</h3>
+                                <h4>Bãi Biển đẹp nhất hành tinh</h4>
+                            </div>
+                            <p>
+                                - Bãi biển Mỹ Khê thuộc phường Phước Mỹ, quận Sơn Trà, thành phố Đà Nẵng, cách trung tâm thành phố khoảng 2km. <br>
+                                - Biển Mỹ Khê là bãi biển nằm trong top 6 bãi biển đẹp nhất hành tinh, là điểm đến mà ai cũng muốn ghé thăm thử một lần. <br>
+                                - Bãi biển Mỹ Khê ở Đà Nẵng nổi tiếng với dải cát trắng mịn, nước trong xanh, ấm áp quanh năm, 
+                                sóng biển êm nhẹ cùng hàng dừa xanh bao quanh, tạo nên vẻ đẹp khó cưỡng. <br>
+                            </p>
+                            <a href="">Chi Tiết</a>
+                        </div>
+                    </div>
+                    <div class="text-tour-item">
+                        <div class="text-tour-img">
+                            <img src="https://images.baoquangnam.vn/Storage/NewsPortal/2022/4/4/125513/B1.jpg" alt="Hội An">
+                        </div>
+                        <div class="text-tour">
+                            <div class="tour-content middle">
+                                <h3>Hội An</h3>
+                                <h4>Xứ sở đèn lồng</h4>
+                            </div>
+                            <p>
+                                - Phố cổ Hội An là một đô thị cổ nằm ở hạ lưu sông Thu Bồn, cách thành phố Đà Nẵng khoảng chừng 30km về phía Nam. <br>
+                                - Những mái ngói cũ phủ đầy rêu phong, những con đường ngập trong sắc đỏ của đèn lồng, những bức hoành phi được chạm trổ tinh vi, 
+                                tất cả như đưa ta về với một thế giới của vài trăm năm trước. <br>
+                                - Một lần du lịch Hội An sẽ làm say đắm lòng du khách bởi những nét đẹp trường tồn cùng thời gian, vô cùng mộc mạc, bình dị.
+                            <a href="">Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-tour-sightseeing">
+                <h1>Một số địa điểm</h1>
+                <h3>Với cảnh quan thiên nhiên đẹp mà bạn nên biết</h3>
+                <div class="img-tour-sightseeing">
+                    <div class="tour-sightseeing">
+                        <div class="sightseeing">
+                            <img src="https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2017/08/Nui-Ngu-Hanh-Son.png" alt="Núi Ngũ Hành Sơn">
+                        </div>
+                        <div class="text-sightseeing">
+                            <h2>Núi Ngũ Hành Sơn</h2>
+                        </div>
+                    </div>
+                    <div class="tour-sightseeing">
+                        <div class="sightseeing">
+                            <img src="https://tokyometro.vn/wp-content/uploads/2022/09/Review-Kinh-Nghiem-Va-Gia-Ve-Suoi-Mo-Day-Du.jpg" alt="Suối Mơ">
+                        </div>
+                        <div class="text-sightseeing">
+                            <h2>Suối mơ</h2>
+                        </div>
+                    </div>
+                    <div class="tour-sightseeing">
+                        <div class="sightseeing">
+                            <img src="https://ik.imagekit.io/tvlk/blog/2022/06/thanh-dia-my-son-18-1024x683.jpg?tr=dpr-2,w-675" alt="Thánh địa Mỹ Sơn">
+                        </div>
+                        <div class="text-sightseeing">
+                            <h2>Thánh địa Mỹ Sơn</h2>
+                        </div>
+                    </div>
+                    <div class="tour-sightseeing">
+                        <div class="sightseeing">
+                            <img src="https://statics.vinpearl.com/bao-tang-3d-trickeye-1_1632824205.jpeg" alt="Bảo tàng 3D Trick Ey">
+                        </div>
+                        <div class="text-sightseeing">
+                            <h2>Bảo tàng 3D Trick Eye</h2>
+                        </div>
+                    </div>
+                    <div class="tour-sightseeing">
+                        <div class="sightseeing">
+                            <img src="https://statics.vinpearl.com/cau-tinh-yeu-da-nang-1_1629472471.jpg" alt="Cầu Khoá tình yêu">
+                        </div>
+                        <div class="text-sightseeing">
+                            <h2>Cầu Khoá tình yêu</h2>
+                        </div>
+                    </div>
+                    <div class="tour-sightseeing">
+                        <div class="sightseeing">
+                            <img src="https://tapchicongthuong.vn/images/20/6/25/rung_dua.jpg" alt="Rừng dừa 7 mẫu Hội An">
+                        </div>
+                        <div class="text-sightseeing">
+                            <h2>Rừng dừa 7 mẫu Hội An</h2>
+                        </div>
+                    </div>
+                    <div class="tour-sightseeing">
+                        <div class="sightseeing">
+                            <img src="https://statics.vinpearl.com/bai-bien-non-nuoc-da-nang-1.jpg" alt="Biển Non Nước">
+                        </div>
+                        <div class="text-sightseeing">
+                            <h2>Biển Non Nước</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-cuisine">
+                <h1>Thưởng thức đặc sản Miền Trung</h1>
+                <h2>Cảm nhận tinh hoa ẩm thực</h2>
+                <section id="cuisine-img-item">
+                    <input type="radio" name="cuisine-img-item" id="s1">
+                    <input type="radio" name="cuisine-img-item" id="s2">
+                    <input type="radio" name="cuisine-img-item" id="s3" checked>
+                    <input type="radio" name="cuisine-img-item" id="s4">
+                    <input type="radio" name="cuisine-img-item" id="s5">
+                    <label for="s1" id="slider1">
+                        <img src="/mi quang ech.jpeg" width="100%" height="100%" alt="Mì Quảng ếch">
+                        <div class="text-img-cuisine">
+                            <span>Mì Quảng ếch</span>
+                        </div>
+                    </label>
+                    <label for="s2" id="slider2">
+                        <img src="/com-ga.jpg" width="100%" height="100%"  alt="Cơm Gà Tam Kì">
+                        <div class="text-img-cuisine">
+                            <span>Cơm Gà Tam Kì</span>
+                        </div>
+                    </label>
+                    <label for="s3" id="slider3">
+                        <img src="/cao lau.jpg" width="100%" height="100%"  alt="Bún mắm nêm">
+                        <div class="text-img-cuisine">
+                            <span>Cao lầu</span>
+                        </div>
+                    </label>
+                    <label for="s4" id="slider4">
+                        <img src="/banh-xeo-da-nang-1_1629076954.jpg" width="100%" height="100%"  alt="Bánh Xèo Tôm nhảy">
+                        <div class="text-img-cuisine">
+                            <span>Bánh Xèo Tôm nhảy</span>
+                        </div>
+                    </label>
+                    <label for="s5" id="slider5">
+                        <img src="/banh-goi.jpg" width="100%" height="100%"  alt="Các Loại Bánh">
+                        <div class="text-img-cuisine">
+                            <span>Các Loại Bánh</span>
+                        </div>
+                    </label>
+                </section>
+            </div>
+            <div class="text-tour-package">
+                <h1>Tour du lịch Đà Nẵng</h1>
+                <div class="tour-package-item">
+                    <div class="tour-package">
+                        <h4>6.000.000đ</h4>
+                        <h5>-10%</h5>
+                        <div class="img-package img-package1">
+                            <div class="content-package">
+                                <img src="https://dulichviet.net.vn/wp-content/uploads/2019/02/ngo-mon-hue.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="img-package img-package2">
+                            <div class="content-package">
+                                <h2>6 ngày 5 Đêm</h2>
+                                <h3>DU LỊCH TẠI ĐÀ NẴNG - SUỐI KHOÁNG NÓNG THẦN TÀI - HỘI AN - BÀ NÀ - CẦU VÀNG - HUẾ</h3>
+                                <ul>
+                                    <li><i class="fa-solid fa-location-dot"></i>Từ: TP.HCM</li>
+                                    <li><i class="fa-regular fa-calendar-check"></i>Khởi hành: 2223 - 04 - 15</li>
+                                    <li><i class="fa-solid fa-user"></i>Số chỗ: 45</li>
+                                    <li><i class="fa-solid fa-user"></i>Số ghế còn trống: 20</li>
+                                </ul>
+                                    <a href="">Chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-package">
+                        <h4>6.000.000đ</h4>
+                        <h5>-10%</h5>
+                        <div class="img-package img-package1">
+                            <div class="content-package">
+                                <img src="https://vcdn1-dulich.vnecdn.net/2022/06/03/cauvang-1654247842-9403-1654247849.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=Swd6JjpStebEzT6WARcoOA" alt="">
+                            </div>
+                        </div>
+                        <div class="img-package img-package2">
+                            <div class="content-package">
+                                <h2>6 ngày 5 Đêm</h2>
+                                <h3>DU LỊCH TẠI ĐÀ NẴNG - SUỐI KHOÁNG NÓNG THẦN TÀI - HỘI AN - BÀ NÀ - CẦU VÀNG - HUẾ</h3>
+                                <ul>
+                                    <li><i class="fa-solid fa-location-dot"></i>Từ: TP.HCM</li>
+                                    <li><i class="fa-regular fa-calendar-check"></i>Khởi hành: 2223 - 04 - 10</li>
+                                    <li><i class="fa-solid fa-user"></i>Số chỗ: 45</li>
+                                    <li><i class="fa-solid fa-user"></i>Số ghế còn trống: 10</li>
+                                </ul>
+                                    <a href="">Chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-package">
+                        <h4>6.000.000đ</h4>
+                        <h5>-10%</h5>
+                        <div class="img-package img-package1">
+                            <div class="content-package">
+                                <img src="https://vitracotour.com/wp-content/uploads/2022/04/du-lich-cu-lao-cham-1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="img-package img-package2">
+                            <div class="content-package">
+                                <h2>6 ngày 5 Đêm</h2>
+                                <h3>Du lich Đà Nẵng - Bà Nà Hill - Bán đảo Sơn Trà - Thánh địa Mỹ Sơn - Cù Lao Chàm</h3>
+                                <ul>
+                                    <li><i class="fa-solid fa-location-dot"></i>Từ: TP.HCM</li>
+                                    <li><i class="fa-regular fa-calendar-check"></i>Khởi hành: 2223 - 04 - 20</li>
+                                    <li><i class="fa-solid fa-user"></i>Số chỗ: 30</li>
+                                    <li><i class="fa-solid fa-user"></i>Số ghế còn trống: 10</li>
+                                </ul>
+                                    <a href="">Chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-package">
+                        <h4>6.000.000đ</h4>
+                        <h5>-10%</h5>
+                        <div class="img-package img-package1">
+                            <div class="content-package">
+                                <img src="https://pavilionhotel.vn/uploads/article/full-h2fsz2fvc5ieih4-888-top-5-bai-bien-dep-nhat-da-nang.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="img-package img-package2">
+                            <div class="content-package">
+                                <h2>6 ngày 5 Đêm</h2>
+                                <h3>Du lich Đà Nẵng - Bà Nà Hill - Biển Mỹ Khê</h3>
+                                <ul>
+                                    <li><i class="fa-solid fa-location-dot"></i>Từ: TP.HCM</li>
+                                    <li><i class="fa-regular fa-calendar-check"></i>Khởi hành: 2223 - 04 - 18</li>
+                                    <li><i class="fa-solid fa-user"></i>Số chỗ: 20</li>
+                                    <li><i class="fa-solid fa-user"></i>Số ghế còn trống: 10</li>
+                                </ul>
+                                    <a href="">Chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="domestic-tourism-item">
+                <h1>Tour du lịch Đang hot</h1>
+                <div class="domestic-tourism">
+                    <div id="domestic">
+                        <div class="item" style="background-image: url(https://bizweb.dktcdn.net/100/315/268/products/thanhhuong171115091121jeongdon.jpg?v=1536117473157);">
+                            <div class="content-tourism">
+                                <div class="name">Tour Đặc Sắc Hàn Quốc 5N4Đ cho mùa Lá Đỏ</div>
+                                <div class="des">
+                                    Thưởng ngoạn hoa anh đào trên đảo Jeju và thủ đô Seoul nơi xứ sở Kim Chi - Hàn Quốc. <br><br>
+                                    Khám phá thủ đô Seoul sầm uất, thưởng thức show diễn nghệ thuật Painters Hero vẽ tranh độc đáo trên nền nhạc sôi động kết hợp các điệu nhảy...
+                                </div>
+                                <button>Chi tiết</button>
+                            </div>
+                        </div>
+                        <div class="item" style="background-image: url(https://bizweb.dktcdn.net/100/315/268/products/romainformazionigenerali.jpg?v=1532329000443);">
+                            <div class="content-tourism">
+                                <div class="name">Du lịch Ý [Rome - Pisa - Florence - Venice - Milan]</div>
+                                <div class="des">
+                                    Hành trình đặc sắc khám phá nước Ý lãng mạn, tìm hiểu cuộc sống thanh bình và con người nơi đây <br><br>
+                                    Thưởng ngoạn các danh lam thắng cảnh, chiêm ngưỡng các công trình kiến trúc, các chứng tích lịch sử cổ kính, những kiệt tác của các hoạ sỹ...
+                                </div>
+                                <button>Chi tiết</button>
+                            </div>
+                        </div>
+                        <div class="item" style="background-image: url(https://bizweb.dktcdn.net/thumb/1024x1024/100/315/268/products/singaporemalaysiathailanduthuy-8aef95b4-e116-4846-b480-2a88f98d88fe.jpg?v=1536117927370);">
+                            <div class="content-tourism">
+                                <div class="name">Tour du thuyền Singapore - Malaysia đẳng cấp 5 sao - 4 ngày 3 đêm</div>
+                                <div class="des">
+                                    Cơ hội làm quen với phương thức du lịch đặc biệt “Fly - Cruise” (Hàng không 5 sao Singapore kết hợp Du thuyền 5 sao Voyager Of The Seas). <br><br>
+                                    Tận hưởng khoảnh khắc giải trí tuyệt vời cùng dịch vụ đẳng cấp, hiện đại, tiện nghi bậc nhất trên..
+                                </div>
+                                <button>Chi tiết</button>
+                            </div>
+                        </div>
+                        <div class="item" style="background-image: url(https://bizweb.dktcdn.net/thumb/1024x1024/100/315/268/products/jed1367636408.jpg?v=1532329024767);">
+                            <div class="content-tourism">
+                                <div class="name">Miền Tây - Đồng Tháp - Tràm Chim - Thiền Viện Trúc Lâm Chánh Giác</div>
+                                <div class="des">
+                                    Tìm hiểu đời sống của dân tộc thiểu số tại bản Lao Chải - Tả Van. <br> <br>
+                                    Viếng chùa Bái Đính - ngôi chùa của những kỷ lục. <br> <br>
+                                    Tham quan KDL Tràng An - với hệ thống sông, suối, các hang xuyên thủy động và các dãy núi đá vôi...
+                                </div>
+                                <button>Chi tiết</button>
+                            </div>
+                        </div>
+                        <div class="item" style="background-image: url(https://batdongsanphuquoc.com/wp-content/uploads/2022/03/hon-thom.jpg);">
+                            <div class="content-tourism">
+                                <div class="name">Tour Du Lịch Phú Quốc 2 Ngày 1 Đêm - Đông Đảo</div>
+                                <div class="des">
+                                    Du ngoạn trên biển, trải nghiệm cuộc sống của ngư dân, bơi lội giữa biển và ngắm san hô <br><br>
+                                    Tắm biển Bãi Sao (hoặc bãi Ông Lang) - một trong những bãi biển đẹp nhất tại Phú Quốc
+                                </div>
+                                <button>Chi tiết</button>
+                            </div>
+                        </div>
+                        <div class="item" style="background-image: url(https://bizweb.dktcdn.net/thumb/1024x1024/100/315/268/products/nhatrangc78f01e6aa6f4e5ea1d367.jpg?v=1536115449087);">
+                            <div class="content-tourism">
+                                <div class="name">Tour du lịch Hà Nội - biển Nha Trang 4 ngày 3 đêm</div>
+                                <div class="des">Viếng thăm tháp Bà Ponagar - ngôi đền cổ được người Chăm xây dựng từ thế kỷ thứ VIII <br><br>
+                                    Vui chơi tại khu giải trí Vinpearl Land - rất quy mô và hiện đại, có thể sánh ngang với nhiều công viên giải trí hàng đầu trong khu vực
+                                </div>
+                                <button>Chi tiết</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+                        <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div id="service-bum">
+                <div class="service-bumblebee">
+                    <div class="service-bumble">
+                        <h1>Lý do bạn nên chọn SaBo travel</h1>
+                        <div class="service">
+                            <div class="service1">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <h2>Dịch vụ</h2>
+                                <p>
+                                    Một trong những đơn vị đi đầu trong việc đặt tour online tốt nhất Việt Nam.
+                                    Áp dụng những công nghệ hiện đại nhất
+                                </p>
+                            </div>
+                            <div class="service1">
+                                <i class="fa-sharp fa-solid fa-headset"></i>
+                                <h2>Hỗ trợ 24/7</h2>
+                                <p>
+                                    Luôn giải đáp mọi thắc mắc của khách hàng dù bất kì thời gian nào trong ngày. 
+                                    Liên hệ ngay để trải nghiệm
+                                </p>
+                            </div>
+                            <div class="service1">
+                                <i class="fa-solid fa-percent"></i>   
+                                <h2>Giá rẻ & nhiều ưu đãi</h2>
+                                <p>
+                                    Phương châm của công ty là để mọi người mọi nhà 
+                                    đều có thể đi du lịch với giá cả hợp lý
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="partner-develop">
+                <h1>Đối tác cùng phát triển</h1>
+                <div class="partner-develop-img">
+                    <img src="https://bizweb.dktcdn.net/100/315/268/themes/857513/assets/brand_1.jpg?1679907698369" alt="">
+                    <img src="https://bizweb.dktcdn.net/100/315/268/themes/857513/assets/brand_2.jpg?1679907698369" alt="">
+                    <img src="https://bizweb.dktcdn.net/100/315/268/themes/857513/assets/brand_3.jpg?1679907698369" alt="">
+                    <img src="https://bizweb.dktcdn.net/100/315/268/themes/857513/assets/brand_4.jpg?1679907698369" alt="">
+                    <img src="https://bizweb.dktcdn.net/100/315/268/themes/857513/assets/brand_5.jpg?1679907698369" alt="">
+                </div>
+            </div>
+            <div class="text-register-item">
+                <div class="register-item">
+                    <div class="register">
+                        <h1>Đăng kí nhận tin</h1>
+                        <p>
+                            Tổng hợp những chương trình tour theo tháng, du lịch vòng quanh thế giới với mức chi phí cực rẻ. 
+                            Để nhận ngay những thông tin chương trình tour hot, Sale. Quý khách hàng vui lòng nhập thông tin email tại đây ! Thanks
+                        </p>
+                        <hr>
+                        <input type="text" placeholder="Email nhận tin">
+                        <button>Đăng kí</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <footer>
+            <div class="text-bumblebee-contact">
+                <div class="bumblebee-contact text-address">
+                    <div id="address">
+                        <h1>Thông tin liên hệ</h1>
+                            <ul>
+                                <li><i class="fa-solid fa-location-dot"></i><a href="#">Địa chỉ: 437 Nguyễn Văn Công, Phường 2, Gò Vấp, TPHCM</a></li>
+                                <li><i class="fa-solid fa-phone"></i><a href="#">Hotline: 0333573303</a></li>
+                                <li><i class="fa-solid fa-envelope"></i><a href="#">Email: sabotravel@gmail.com</a></li>
+                            </ul>
+                    </div> 
+                    <div id="pay">
+                        <h2>Kết nối với chúng tôi</h2>
+                        <div class="address-icon">
+                            <img src="https://png.pngtree.com/png-clipart/20190520/original/pngtree-facebook-social-media-icon-design-template-vector-png-image_3654755.png" alt="">
+                            <img src="https://png.pngtree.com/png-clipart/20220810/original/pngtree-instagram-icon-instagram-logo-picture-image_3584852.png" alt="">
+                            <img src="https://png.pngtree.com/png-clipart/20190613/original/pngtree-google-plus-logo-icon-png-image_3570309.jpg" alt="">
+                            <img src="https://png.pngtree.com/png-clipart/20190516/original/pngtree-whatsapp-icon-png-image_3584845.jpg" alt="">
+                        </div> 
+                        <h2>Chấp nhận thanh toán</h2>
+                        <div class="pay-list">
+                            <ul>
+                                <li><img src="https://bizweb.dktcdn.net/100/315/268/themes/857513/assets/img_payment_1.png?1679907698369" alt=""></li>
+                                <li><img src="https://bizweb.dktcdn.net/100/315/268/themes/857513/assets/img_payment_2.png?1679907698369" alt=""></li>
+                                <li><img src="https://bizweb.dktcdn.net/100/315/268/themes/857513/assets/img_payment_3.png?1679907698369" alt=""></li>
+                                <li><img src="https://bizweb.dktcdn.net/100/315/268/themes/857513/assets/img_payment_4.png?1679907698369" alt=""></li>
+                                <li><img src="https://bizweb.dktcdn.net/100/315/268/themes/857513/assets/img_payment_5.png?1679907698369" alt=""></li>
+                                <li><img src="https://bizweb.dktcdn.net/100/315/268/themes/857513/assets/img_payment_6.png?1679907698369" alt=""></li>
+                                <li><img src="https://bizweb.dktcdn.net/100/315/268/themes/857513/assets/img_payment_7.png?1679907698369" alt=""></li>
+                                <li><img src="https://bizweb.dktcdn.net/100/315/268/themes/857513/assets/img_payment_8.png?1679907698369" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="news">
+                        <h2>Tin tức</h2>
+                        <ul>
+                            <li><a href="">Bản tin Du Lịch Việt</a></li>
+                            <li><a href="">Cẩm nang du lịch</a></li>
+                            <li><a href="">Khám phá du lịch</a></li>
+                            <li><a href="">Sự kiện du lịch</a></li>
+                            <li><a href="">Tuyển dụng Du Lịch</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div id="client">
+                        <h2>Góc khách hàng</h2>
+                        <ul>
+                            <li><i class="fa-solid fa-lock"></i><a href="#">Điều kiện & điều khoản</a></li>
+                            <li><i class="fa-solid fa-lock"></i><a href="#">Quyền riêng tư</a></li>
+                            <li><i class="fa-solid fa-lock"></i><a href="#">Chính sách bảo mật và thông tin</a></li>
+                            <li><i class="fa-solid fa-comments"></i><a href="#">Ý kiến khách hàng</a></li>
+                            <li><i class="fa-solid fa-cart-shopping"></i><a href="#">Phương thức thanh toán</a></li>
+                        </ul>
+                    </div>  
+                </div>
+            </div>
+    </footer>
+    </div>
+    <script>
+        $(document).ready(function(){
+        $('.image_slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        Infinity: true,
+        arrows:true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        prevArrow: `<button type='button' class='slick-prev slick-arrow'><ion-icon name="arrow-back-outline"></ion-icon></button>`,
+        nextArrow: `<button type='button' class='slick-next slick-arrow'><ion-icon name="arrow-forward-outline"></ion-icon></button>`,
+        dots: false,
+    });
+});
+    </script>
+    <script>
+        $(document).ready(function(){
+    $('.img-tour-sightseeing').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        Infinity: true,
+        arrows:true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        prevArrow: `<button type='button' class='slick-prev slick-arrow'><ion-icon name="arrow-back-outline"></ion-icon></button>`,
+        nextArrow: `<button type='button' class='slick-next slick-arrow'><ion-icon name="arrow-forward-outline"></ion-icon></button>`,
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+                }
+            },
+            {
+                breakpoint: 1023,
+                settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 739,
+                settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                }
+            }
+            ]
+    });
+});
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('#toggle').click(function(){
+                $('nav').slideToggle();
+            })
+        });
+    </script>
+    <script>
+        document.getElementById('next').onclick = function(){
+    let lists = document.querySelectorAll('.item');
+    document.getElementById('domestic').appendChild(lists[0]);
+}
+document.getElementById('prev').onclick = function(){
+    let lists = document.querySelectorAll('.item');
+    document.getElementById('sdomestic').prepend(lists[lists.length - 1]);
+}
+    </script>
+</body>
+</html>

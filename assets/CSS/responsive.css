@@ -1,0 +1,1758 @@
+@media screen and (min-width:200px) {
+    #main-menu{
+        flex-direction: column;
+        text-align: center;
+    }
+    nav{
+        display: none;
+    }
+    #header{
+        width: 100%;
+        height: 700px;
+    }
+    .header-search{
+        height: 180px;
+    }
+    #logo a{
+        margin-left: 0px;
+    }
+    .input-search i{
+        left: 0;
+        top: 0px;
+        background: #00FFCC;
+        padding: 17px;
+    }
+    .input-search {
+        margin: 0 0px ;
+        display: flex;
+    }
+    .input-search input{
+        width: 100%;
+        padding: 10px 90px;
+    }
+    .Signup-login{
+        margin-left: 0px;
+    }
+    #header hr{
+        border-color: #00FFCC;
+    }
+    #toggle{
+        display: block;
+    }
+    #toggle i{
+        color: #ffffff;
+        font-size: 30px;
+        cursor: pointer;
+        padding: 10px;
+        margin-left: 100px;
+    }
+    #toggle i:hover{
+        background-color: #0066FF;
+    }
+    /*menu*/
+    .menu-child{
+        width: 100%;
+        left: 0;
+        top: 100%;
+    }
+    .menu-child-item h1{
+        font-size: 18px;
+        padding: 7px;
+    }
+    /*banner*/
+    .image img{
+        height: 500px;
+    }
+    .text-bumble{
+        width: 60%;
+        height: 100px;
+        top: 300px;
+        left: 10px;
+    }
+    .text-bumble h1{
+        font-size: 20px;
+    }
+    .text-bumble h4{
+        font-size: 15px;
+    }
+    /*tìm kím tour*/
+    .search-tour-content{
+        width: 100%;
+        height: 80px;
+        background-color: rgb(255, 255, 255, 0.3);
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        position: absolute;
+        top:84%;
+    }
+    .tour-content-form{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items:center ;
+        flex-wrap: wrap;
+    }
+    /*Giới thiệu Đà Nẵng*/
+    .introduce-danang{
+        margin: 50px auto;
+        width: 100%;
+        height: 360px;
+    }
+    .introduce-danang h1{
+        font-size: 25px;
+    }
+    .introduce-danang span{
+        font-size: 18px;
+    }
+    /*tour nổi tiếng*/
+    .text-tour-famous{
+        width: 100%;
+        height: 2670px;
+        margin: 50px auto;
+    }
+    .text-tour-famous h1{
+        font-size: 30px;
+        margin-bottom: -30px;
+    }
+    .text-tour-famous h2{
+        color: #072f62;
+        font-size: 25px;
+        margin: 30px auto;
+    }
+    .tour-famous-list{
+        width: 100%;
+        height: 1100px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .text-tour-item{
+        width: 100%;
+        height: 600px;
+        margin: 10px 0;
+    }
+    .text-tour h3{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .text-tour h4{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .text-tour p{
+        font-size: 16px;
+        padding: 20px;
+        
+    }
+    .text-tour a{
+        top: 85%;
+        width: 50%;
+        left: 25%;
+    }
+    /*tour bạn không nên bỏ qua*/
+    .text-tour-sightseeing{
+        width: 100%;
+        height: 750px;
+    }
+    .text-tour-sightseeing h1{
+        font-size: 30px;
+    }
+    .text-tour-sightseeing h3{
+        font-size: 25px;
+    }
+    .text-sightseeing h2{
+        font-size: 20px;
+    }
+    .slick-dots{
+        bottom: -35px;
+        left: 20%;
+    }
+    /*đặc sản miền trung*/
+    .text-cuisine{
+        width: 100%;
+        height: 650px;
+        margin: 50px auto;
+    }
+    #cuisine-img-item{
+        width: 100%;
+        height: 500px;
+    }
+    #cuisine-img-item label{
+        width: 100%;
+        height: 90%;
+    }
+    #cuisine-img-item img{
+        border-radius: 50px;
+        box-shadow: 0px 0px 20px red;
+    }
+    /*tour du lịch đà nẵng*/
+    .text-tour-package{
+        width: 100%;
+        height: 2500px;
+    }
+    .text-tour-package h1{
+        font-size: 30px;
+    }
+    /*tour du lich tieu biểu*/
+    .domestic-tourism-item{
+        width: 100%;
+        height: 820px;
+    }
+    .domestic-tourism-item h1{
+        font-size: 30px;
+    }
+    .domestic-tourism{
+        width:100%;
+        height:700px;
+    }
+    .item{
+        width:35%;
+        top:25%;
+        transform: translate(70%,-50%);
+    }
+    .item .content-tourism{
+        top:60%;
+        left:10px;
+        width:50%;
+    }
+    .item .name{
+        font-size: 20px;
+    }
+    .item .des{
+        font-size: 16px;
+        margin:10px 0;
+    }
+    .buttons{
+        width:50%;
+        left: 100px;
+    }
+    /*Dich vụ*/
+    #service-bum{
+        width: 100%;
+        height: 1100px;
+    }
+    .service-bumblebee{
+        width: 100%;
+        height: 100%;
+    }
+    .service-bumble h1{
+        font-size: 30px;
+    }
+    .service{
+        width: 100%;
+        height: 90%;
+    }
+    .service1{
+        width: 100%;
+    }
+    /*Đăng kí*/
+    .text-register-item{
+        height: 450px;
+    }
+    .register{
+        width: 100%;
+        height: 90%;
+    }
+    .register p{
+        margin: 20px 20px;
+    }
+    .register hr{
+        width: 80%;
+    }
+    .register input{
+        width: 100%;
+    }
+    .register button{
+        width: 70%;
+        padding: 10px 30px;
+    }
+    /*Đối tác cùng phát triển*/
+    .partner-develop{
+        width: 100%;
+        height: 280px;
+    }
+    .partner-develop-img{
+        flex-wrap: wrap;
+    }
+    /*footer*/
+    .text-bumblebee-contact{
+        width: 100%;
+        height: 1000px;
+        background: #ffffff;
+        text-align: center;
+    }
+    .bumblebee-contact{
+        width: 100%;
+        height: 100%;  
+    }
+    #address{
+        width: 100%;
+        height: 200px;
+    }
+    #pay{
+        width: 100%;
+        height: 250px;
+    }
+    #news{
+        width: 100%;
+        height: 250px;
+    }
+    #client{
+        width: 100%;
+        height: 250px;
+    }
+}
+/*tablet*/
+@media screen and (min-width:756px) {
+    #header{
+        width: 100%;
+        height: 820px;
+    }
+    .header-search{
+        height: 150px;
+        flex-direction: column;
+    }
+    #logo a{
+        margin-left: 0px;
+    }
+    .input-search i{
+        left: 0;
+        top: 0px;
+        padding: 18px;
+    }
+    .input-search {
+        margin: 15px 0px;
+    }
+    .input-search input{
+        width: 100%;
+        padding: 10px 190px;
+    }
+    .Signup-login{
+        margin-left: 0px;
+    }
+    #toggle{
+        display: none;
+    }
+    nav{
+        display: block;
+    }
+    /*menu*/
+    #main-menu{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .menu-child{
+        width: 60%;
+        left: 22%;
+    }
+    .menu-child-item{
+        width: 34%;
+    }
+    #toggle{
+        display: none;
+    }
+    /*banner*/
+    .image img{
+        height: 600px;
+    }
+    .text-bumble{
+        top: 370px;
+        left: 30px;
+    }
+    /*tìm kím tour*/
+    .search-tour-content{
+        top:86%;
+    }
+    /*Giới thiệu Đà Nẵng*/
+    .introduce-danang{
+        margin: 50px auto;
+        width: 65%;
+        height: 290px;
+    }
+    .introduce-danang h1{
+        font-size: 30px;
+    }
+    .introduce-danang span{
+        font-size: 20px;
+    }
+    /*tour nổi tiếng*/
+    .text-tour-famous{
+        width: 100%;
+        height: 1420px;
+        margin: 50px auto;
+    }
+    .text-tour-famous h1{
+        font-size: 35px;
+    }
+    .text-tour-famous h2{
+        font-size: 30px;
+    }
+    .tour-famous-list{
+        width: 100%;
+        height: 1300px;
+    }
+    .text-tour-item{
+        cursor: pointer;
+        width: 49%;
+        height: 600px;
+    }
+    .text-tour-img,.text-tour{
+        height: 100%;
+        width: 100%;
+    }
+    .text-tour h3{
+        font-size: 30px;
+    }
+    .text-tour h4{
+        font-size: 25px;
+    }
+    .text-tour p{
+        font-size: 18px;   
+    }
+    .text-tour a{
+        top: 510px;
+        width: 35%;
+        padding: 10px 10px;
+        left: 120px;
+    }
+    /*tour bạn không nên bỏ qua*/
+    .text-tour-sightseeing{
+        width: 100%;
+        height: 700px;
+    }
+    .text-tour-sightseeing h1{
+        font-size: 35px;
+    }
+    .text-tour-sightseeing h3{
+        font-size: 30px;
+    }
+    .slick-dots{
+        bottom: -40px;
+        left: 37%;
+    }
+    /*đặc sản miền trung*/
+    .text-cuisine{
+        width: 100%;
+        height: 800px;
+    }
+    #cuisine-img-item{
+        width: 100%;
+        height: 700px;
+    }
+    #cuisine-img-item label{
+        width: 75%;
+        height: 90%;
+        border-radius: 10px;
+    }
+    #cuisine-img-item img{
+        border-radius: 50px;
+        box-shadow: 10px 10px 20px red;
+    }
+
+    /*tour du lịch đà nẵng*/
+    .text-tour-package{
+        width: 100%;
+        height: 1380px;
+    }
+    .text-tour-package h1{
+        font-size: 35px;
+    }
+    .tour-package-item{
+        width: 100%;
+        height: 1300px;
+    }
+    .tour-package-item .tour-package{
+        position: relative;
+    }
+    .tour-package-item .tour-package .img-package img{
+        width: 100%;
+        height: 300px;
+    }
+    .tour-package-item .tour-package .img-package {
+        width: 400px;
+        height: 300px;
+    }
+    /*tour du lich tieu biểu*/
+    .domestic-tourism-item{
+        width: 100%;
+        height: 800px;
+    }
+    .domestic-tourism-item h1{
+        font-size: 35px;    
+    }
+    .domestic-tourism{
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+        width:100%;
+        height:700px;
+        padding:50px;
+        background-color: #f5f5f5;
+    }
+    .item{
+        width:20%;
+        top:50%;
+        transform: translate(70%,-100%);
+    }
+    .item .content-tourism{
+        top:60%;
+        left:10px;
+        width:40%;
+        background: rgb(0, 0, 0, 0.3);
+    }
+    .item .content-tourism button{
+        padding: 10px;
+        color: #000;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 20px;
+    }
+    .item .content-tourism button:hover{
+        background: #0066FF;
+        color: #ffffff;
+    }
+    .item:nth-child(2) .content-tourism{
+        display: block;
+        z-index: 11111;
+    }
+    .item .name{
+        font-size: 20px;
+    }
+    .item .des{
+        color: #ffffff;
+        font-size: 18px;
+        margin:20px 0;
+        opacity: 0;
+        animation:showcontent 1s ease-in-out 0.3s 1 forwards
+    }
+    .item button{
+        padding:10px 20px;
+        border:none;
+        opacity: 0;
+        animation:showcontent 1s ease-in-out 0.6s 1 forwards
+    }
+    .buttons{
+        position: absolute;
+        bottom:30px;
+        z-index: 222222;
+        text-align: center;
+        width:100%;
+        left: 2%;
+    }   
+    /*Dich vụ*/
+    #service-bum{
+        margin: 50px auto;
+        height: 500px;
+    }
+    .service-bumble h1{
+        font-size: 30px;
+    }
+    .service{
+        width: 100%;
+        height: 400px;
+    }
+    .service1{
+        width: 31%;
+        height: 300px;
+    }
+    /*Đăng kí*/
+    .text-register-item{
+        width: 100%;
+        height: 350px;
+    }
+    .register-item{
+        width: 100%;
+        height: 100%;
+    }
+    .register{
+        width: 78%;
+        height: 90%;
+    }
+    .register h1{
+        font-size: 30px;
+        font-weight: bold;
+        color: #ffffff;
+    }
+    .register p{
+        font-size: 18px;
+        color: #ffffff;
+        margin: 20px 50px;
+    }
+    .register hr{
+        width: 70%;
+        border: 1px solid #ffffff;
+        margin: 30px;
+    }
+    .register input{
+        width: 90%;
+    }
+    .register button{
+        width: 40%;
+        padding: 10px 30px;
+    }
+    /*Đối tác*/
+    .partner-develop{
+        width: 70%;
+        height: 230px;
+        margin: 50px auto;
+    }
+    .partner-develop h1{
+        font-size: 30px;
+        text-align: center;
+        margin: 30px;
+    }
+    .partner-develop-img{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    /*footer*/
+    .text-bumblebee-contact{
+        width: 100%;
+        height: 520px;
+        background: #ffffff;
+    }
+    .bumblebee-contact{
+        width: 100%;
+        height: 100%;
+    }
+    #address{
+        width: 49%;
+        height: 250px;
+    }
+    #address h1{
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #32aad6;
+    }
+    #address ul{
+        list-style: none;
+    }
+    #address li a{
+        font-size: 16px;
+        text-decoration: none;
+        line-height: 40px;
+    }
+    #address ul li i{
+        font-size: 16px;
+        margin-right: 15px;
+        color: 	#000;
+    }
+    .address-icon{
+        margin: 20px;
+    }
+    .address-icon img{
+        width: 30px;
+        height: 30px;
+    }
+    #pay{
+        width: 49%;
+        height: 250px;
+    }
+    #pay h2{
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #32aad6;
+        margin-bottom: 20px;
+    }
+    
+    .pay-list ul{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .pay-list img{
+        width: 70px;
+        height: 40px;
+    }
+    #news{
+        width: 49%;
+        height: 250px;
+    }
+    #news h2{
+        font-size: 20px;
+        color: #32aad6;
+        text-transform: uppercase;
+    }
+    #news ul{
+        list-style: none;
+    }
+    #news ul li a{
+        text-decoration: none;
+        font-size: 15px;
+        color: 	#000;
+        line-height: 40px;
+    }
+    #news ul li i{
+        font-size: 16px;
+        margin-right: 15px;
+        color: 	#000;
+    }
+    #client{
+        width: 49%;
+        height: 250px;
+    }
+    #client h2{
+        font-size: 20px;
+        color: #32aad6;
+        text-transform: uppercase;
+    }
+    #client ul{
+        list-style: none;
+    
+    }
+    #client ul li a{
+        text-decoration: none;
+        font-size: 15px;
+        color: 	#000;
+        line-height: 40px;
+    }
+    #client ul li i{
+        font-size: 16px;
+        margin-right: 15px;
+        color:	#000 ;
+    }
+}
+/*laptop*/
+@media screen and (min-width:1024px) {
+    #header{
+        width: 100%;
+        height: 950px;
+    }
+    .header-search{
+        background-color: #154054;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        height: 80px;
+    }
+    #logo a{
+        color: #CC6633;
+        font-size: 30px;
+        text-transform: uppercase;
+        font-family: 'Rubik Iso', cursive;
+        text-decoration: none;
+        margin-right: 50px;
+    }
+    .input-search i{
+        position: absolute;
+        font-size: 16px;
+        left:92%;
+        top: 0px;
+        background: #00FFCC;
+        padding: 17px;
+    }
+    .input-search {
+        position: relative;
+        margin: 0 0px ;
+    }
+    .input-search input{
+        outline: none;
+        width: 600px;
+        padding: 10px 20px;
+    }
+    .Signup-login{
+        margin-left:50px;
+    }
+    .Signup-login a{
+        font-size: 20px;
+        color: #ffffff;
+        text-decoration: none;
+        margin: 0 5px;
+    }
+    .Signup-login a:hover{
+        color: #00FFCC;
+    }
+    #toggle{
+        display: none;
+    }
+    #header hr{
+        border-color: #00FFCC;
+    }
+    /*menu*/
+    ul{
+        list-style: none;
+    }
+    nav{
+        background-color: #154054;
+        width: 100%;
+        position: relative;
+    }
+    #main-menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    #main-menu li a{
+        color: #ffffff;
+        font-size: 18px;
+        display: inline-block;
+        padding: 15px 20px;
+        text-decoration: none;
+        position: relative;
+        cursor: pointer;
+        transition: 0.25s linear;
+    }
+    #main-menu li a:hover{
+        color: #000;
+        background-color: #ccc;
+        display: block;
+    }
+    #main-menu li ::before{
+        content: '';
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        width: 0;
+        height: 5px;
+        background: orangered;
+        transform-origin: left; 
+        transition: width .5s;
+    }
+    #main-menu li a:hover::before{
+        width: 100%;
+    }
+    #main-menu li:hover .menu-child{
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .menu-child{
+        position: absolute;
+        top: 100%;
+        width: 40%;
+        left: 30%;
+        background-color:#154054;
+        display: flex;
+        opacity: 0;
+        visibility: hidden;
+        text-align: center;
+        z-index: 1;
+    }
+    .menu-child-item{
+        width: 34%;
+    }
+    .menu-child-item h1{
+        color: #ffff;
+        font-size: 18px;
+        padding: 20px;
+        background-color:#3366CC;
+        text-transform: uppercase;
+    }
+    #toggle{
+        display: none;
+    }
+    /*banner*/
+    .image_slider{
+        padding-bottom: 0px;
+        width: 100%;
+    }
+    .image_item{
+        position: relative;
+    }
+    .image {
+        width: 100%;
+    }
+    .image img{
+        width: 100%;
+        height: 800px;
+        position: relative;
+    }
+    .slick-initialized .slick-slide{
+        margin: 0 0px;
+    }
+    .slick-arrow{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        border: none;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        line-height: 3px;
+        z-index: 5;
+    }
+    .slick-arrow:hover{
+        border-radius: 50%;
+        background-color: rgb(0, 0, 255,0.4);
+        color: white;
+        border: 2px dotted white;
+    }
+    .slick-prev{
+        background-color:transparent;
+        left: 0;
+        color: white;
+    }
+    .slick-next{
+        right: 0;
+        background-color: transparent;
+        color: white;
+    }
+    .slick-dots{
+        list-style: none;
+        position: absolute;
+        bottom: -15px;
+        left: 43%;
+        transform: translateX(-50%, 0);
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        gap: 0 20px;
+    }
+    .slick-dots button{
+        font-size: 0;
+        width: 15px;
+        height: 15px;
+        border-radius: 100rem;
+        background-color: black;
+        border: none;
+        outline: none;
+        transition: all 0.2s linear;
+    }
+    .slick-dots .slick-active button{
+        background-color: #2cccff;
+    }
+    .text-bumble{
+        position: absolute;
+        width: 400px;
+        height: 150px;
+        background-color: transparent;
+        top: 600px;
+        left: 70px;
+    }
+    .text-bumble h1{
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: white;
+    }
+    .text-bumble h4{
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700px;
+        text-transform: uppercase;
+        color: white;
+    }
+    /*tìm kím tour*/
+    .search-tour-content{
+        width: 100%;
+        height: 80px;
+        background-color: rgb(255, 255, 255, 0.3);
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        position: absolute;
+        top:90%;
+    }
+    .tour-content-form{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items:center ;
+        flex-wrap: wrap;
+    }
+    .tour-content-form  select,input{
+        width: 15%;
+        height: 50px;
+        outline: none;
+        border: none;
+    }
+    .tour-content-form button{
+        width: 12%;
+        height: 50px;
+        outline: none;
+        background: #0066FF;
+        border: none;
+        font-size: 20px;
+        color: #ffffff;
+    }
+    /*Giới thiệu Đà Nẵng*/
+    .introduce-danang{
+        margin: 20px auto;
+        width: 47%;
+        height: 250px;
+        text-align: center;  
+    }
+    .introduce-danang h1{
+        color: #0066FF;
+        font-size: 30px;
+    }
+    .introduce-danang span{
+        color: #000;
+        font-size: 20px;
+    }
+    /*tour nổi tiếng*/
+    .text-tour-famous{
+        width: 90%;
+        height: 1300px;
+        margin: 50px auto;
+    }
+    .text-tour-famous h1{
+        color: #072f62;
+        font-size: 50px;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: -30px;
+    }
+    .text-tour-famous h2{
+        color: #072f62;
+        font-size: 40px;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-align: center;
+        margin: 50px auto;
+    }
+    .tour-famous-list{
+        width: 100%;
+        height: 1100px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .text-tour-item{
+        cursor: pointer;
+        width: 48%;
+        height: 500px;
+        position: relative;
+        box-shadow: 0 0 50px blue;
+    }
+    .text-tour-img img{
+        width: 100%;
+        height: 100%;
+    }
+    .text-tour-img,.text-tour{
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        backface-visibility: hidden;
+        position: absolute;
+        transition: transform 1s linear;
+    }
+    .text-tour h3{
+        font-size: 35px;
+        color: #0066FF;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 40px;
+        margin: 10px auto;  
+    }
+    .text-tour h4{
+        font-size: 30px;
+        color: #0066FF;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 40px;
+        margin: 10px auto;  
+    }
+    .text-tour p{
+        font-size: 18px;
+        color: #000;
+        line-height: 35px;
+        padding: 20px;
+        
+    }
+    .text-tour a{
+        position: absolute;
+        top: 430px;
+        color: #000;
+        font-size: 20px;
+        width: 20%;
+        text-decoration: none;
+        border: 1px solid black;
+        padding: 10px 10px;
+        left: 250px;
+        z-index: 100;
+        text-align: center;
+    }
+    .text-tour a::before{
+        content: '';
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 100%;
+        width: 0px;
+        background-color: #33FFFF;
+        transition: width 0.25s linear;
+        z-index: -1;
+    }
+    .text-tour a:hover::before{
+        width: 100%;
+    }
+    .text-tour-img{
+        transform: perspective(600px) rotateY(0deg);
+    }
+    .text-tour{
+        background: #eee;
+        transform: perspective(600px) rotateY(180deg);
+    }
+    .text-tour-item:hover >.text-tour-img{
+        transform: perspective(600px) rotateY(-180deg);
+    }
+    .text-tour-item:hover >.text-tour{
+        background: #eee;
+        transform: perspective(600px) rotateY(0deg);
+    }
+    /*tour bạn không nên bỏ qua*/
+    .text-tour-sightseeing{
+        margin: 50px auto;
+        width: 85%;
+        height: 760px;
+        background-color: transparent;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-tour-sightseeing h1{
+        text-align: center;
+        color: #072f62;
+        font-size: 50px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 10px;
+    }
+    .text-tour-sightseeing h3{
+        text-align: center;
+        color: #072f62;
+        font-size: 40px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 10px;
+    }
+    .sightseeing{
+        margin: 10px;
+    }
+    .sightseeing img{
+        width: 100%;
+        height: 500px;
+        border-radius: 12px;
+        position: relative;
+    }
+    .text-sightseeing{
+        text-align: center;
+    }
+    .text-sightseeing h2{
+        font-size: 25px;
+        color: black ;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    /*đặc sản miền trung*/
+    .text-cuisine{
+        width: 90%;
+        height: 800px;
+        margin: 50px auto;
+    }
+    .text-cuisine h1{
+        font-size: 30px;
+        font-weight: 500;
+        text-align: center;
+        text-transform: uppercase;
+        color: #0066FF;
+    }
+    .text-cuisine h2{
+        font-size: 25px;
+        font-weight: 500;
+        text-align: center;
+    }
+    #cuisine-img-item{
+        width: 80%;
+        height: 700px;
+        position: relative;
+        perspective: 1000px;
+        transform-style: preserve-3d;
+        margin: 20px auto;
+    }
+    #cuisine-img-item label{
+        margin: auto;
+        width: 75%;
+        height: 90%;
+        border-radius: 4px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        cursor: pointer;
+        transition: transform 0.4s ease;
+    }
+    #cuisine-img-item img{
+        border-radius: 50px;
+        box-shadow: 10px 10px 20px red;
+    }
+    #cuisine-img-item input {
+        position: relative;
+        top: 95%;
+        left: 50%;
+        width: 18px;
+        height: 18px;
+        margin: 0 15px 0 0;
+        transform: translateX(-100px);
+    }
+    .text-img-cuisine span{
+        position: absolute;
+        z-index: 1;
+        top: 87%;
+        left: 10%;
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: 700;
+        background-color: rgb(0, 0, 0, 0.5);
+        padding: 10px;
+        border-radius: 20px;
+    }
+    
+    /*tour du lịch đà nẵng*/
+    .text-tour-package{
+        width: 90%;
+        height: 1380px;
+        margin: 50px auto;
+    }
+    .text-tour-package h1{
+        text-align: center;
+        font-size: 40px;
+        font-weight: 700;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        padding-top: 10px;
+        color: #0066FF;
+        margin-bottom: 20px;
+    }
+    .tour-package-item{
+        width: 100%;
+        height: 1300px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center; 
+        flex-wrap: wrap;
+        position: relative;
+    }
+    .tour-package h4{
+        position: absolute;
+        font-size: 20px;
+        color: #ffffff;
+        background: #FF6600;
+        padding: 10px 20px;
+        top: -10px;
+        left: 5px;
+        z-index: 999;
+    }
+    .tour-package h5{
+        position: absolute;
+        font-size: 20px;
+        color: #ffffff;
+        background: #FF6600;
+        padding: 10px 20px;
+        top: -10px;
+        right: 0;
+        z-index: 999;
+    }
+    .tour-package-item .tour-package{
+        position: relative;
+    }
+    .tour-package-item .tour-package .img-package img{
+        width: 100%;
+        height: 300px;
+    }
+    .tour-package-item .tour-package .img-package {
+        width: 450px;
+        height: 300px;
+        transition: 0.5s;
+    }
+    .tour-package-item .tour-package .img-package.img-package1{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        transform: translateY(300px);
+    }
+    .tour-package-item .tour-package .img-package.img-package1{
+        transform: translateY(0);
+    }
+    .tour-package-item .tour-package .img-package.img-package2{
+        position: relative;
+        background: #fff;
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        padding: 20px;
+        box-sizing: border-box;
+        box-shadow: 0 20px 10px rgba(0, 0, 0, 0.7);
+        transform: translateY(-300px);
+    }
+    .tour-package-item .tour-package:hover .img-package.img-package2{
+        transform: translateY(0);
+    }
+    .tour-package-item .tour-package .img-package.img-package2 h2{
+        color: #CC6600;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: -50px;
+        line-height: 30px;
+    }
+    .tour-package-item .tour-package .img-package.img-package2 h3{
+        color:#000;
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .tour-package-item .tour-package .img-package.img-package2 ul{
+        list-style: none;
+    }
+    .tour-package-item .tour-package .img-package.img-package2 ul li{
+        font-size: 18px;
+        color: #000;
+        line-height: 35px;
+    }
+    .tour-package-item .tour-package .img-package.img-package2 ul li i{
+        font-size: 18px;
+        margin-right: 10px;
+    }
+    .tour-package-item .tour-package .img-package.img-package2 .content-package a{
+        position: absolute;
+        color: #000;
+        font-size: 20px;
+        width: 50%;
+        text-decoration: none;
+        border: 1px solid black;
+        padding: 10px 20px;
+        z-index: 100;
+        text-align: center;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .tour-package-item .tour-package .img-package.img-package2 a:hover{
+        background: #0066FF;
+        color: #ffffff;
+    }
+    /*tour du lich tieu biểu*/
+    .domestic-tourism-item{
+        width: 90%;
+        height: 800px;
+        position: relative;
+        margin: 50px auto;
+    }
+    .domestic-tourism-item h1{
+        font-size: 40px;
+        color: #0066FF;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center; 
+        
+    }
+    .domestic-tourism{
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+        width:80%;
+        height:700px;
+        padding:50px;
+        background-color: #f5f5f5;
+    }
+    #domestic{
+        width:max-content;
+        margin-top:50px;
+    }
+    .item{
+        width:15%;
+        height:300px;
+        background-position: 50% 50%;
+        display: inline-block;
+        transition: 0.5s;
+        background-size: cover;
+        position: absolute;
+        z-index: 1;
+        top:50%;
+        transform: translate(0,-50%);
+        border-radius: 20px;
+        box-shadow:  0 30px 50px #505050;
+    }
+    .item:nth-child(1),
+    .item:nth-child(2){
+        left:0;
+        top:0;
+        transform: translate(0,0);
+        border-radius: 0;
+        width:100%;
+        height:100%;
+        box-shadow: none;
+    }
+    .item:nth-child(3){
+        left:50%;
+    }
+    .item:nth-child(4){
+        left:calc(50% + 220px);
+    }
+    .item:nth-child(5){
+        left:calc(50% + 440px);
+    }
+    .item:nth-child(n+6){
+        left:calc(50% + 660px);
+        opacity: 0;
+    }
+    .item .content-tourism{
+        position: absolute;
+        top:50%;
+        left:100px;
+        width:30%;
+        text-align: center;
+        padding:0;
+        color:#eee;
+        transform: translate(0,-50%);
+        display: none;
+        font-family: Arial, Helvetica, sans-serif;
+        background: rgb(0, 0, 0, 0.5);
+    }
+    .item .content-tourism button{
+        padding: 10px;
+        color: #000;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 20px;
+    }
+    .item .content-tourism button:hover{
+        background: #0066FF;
+        color: #ffffff;
+    }
+    .item:nth-child(2) .content-tourism{
+        display: block;
+        z-index: 11111;
+    }
+    .item .name{
+        font-size: 25px;
+        color: #33FFFF;
+        font-weight: bold;
+        opacity: 0;
+        animation:showcontent 1s ease-in-out 1 forwards
+    }
+    .item .des{
+        color: #ffffff;
+        font-size: 18px;
+        margin:20px 0;
+        opacity: 0;
+        animation:showcontent 1s ease-in-out 0.3s 1 forwards
+    }
+    .item button{
+        padding:10px 20px;
+        border:none;
+        opacity: 0;
+        animation:showcontent 1s ease-in-out 0.6s 1 forwards
+    }
+    @keyframes showcontent{
+        from{
+            opacity: 0;
+            transform: translate(0,100px);
+            filter:blur(33px);
+        }to{
+            opacity: 1;
+            transform: translate(0,0);
+            filter:blur(0);
+        }
+    }
+    .buttons{
+        position: absolute;
+        bottom:30px;
+        z-index: 222222;
+        text-align: center;
+        width:100%;
+    }
+    .buttons button{
+        width:50px;
+        height:50px;
+        border-radius: 50%;
+        border:1px solid #555;
+        transition: 0.5s;
+        cursor: pointer;
+    }.buttons button:hover{
+        background-color: #bac383;
+    }
+    
+    /*Dich vụ*/
+    #service-bum{
+        width: 100%;
+        height: 500px;
+        background-image: url(https://seotrends.com.vn/wp-content/uploads/2021/07/background-bong-bong-nuoc_111421319.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: 5px auto;
+    }
+    .service-bumblebee{
+        width: 100%;
+        height: 100%;
+    }
+    .service-bumble{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0, 0, 0, 0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .service-bumble h1{
+        font-size: 50px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .service{
+        width: 67%;
+        height: 400px;
+        border: none;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .service1{
+        width: 30%;
+        height: 300px;
+        text-align: center;
+        box-shadow: 0 0 10px #fff;
+        border-radius: 10px;
+    }
+    .service1 i{
+        font-size: 60px;
+        color:	#ffffff ;
+        margin-top: 20px;
+    }
+    .service1 h2{
+        font-size: 25px;
+        font-weight: 700;
+        color: #fff;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .service1 p{
+        font-size: 20px;
+        color: #fff;
+        text-align: center;
+        margin-top: 20px;
+    }
+    /*Đăng kí*/
+    .text-register-item{
+        width: 100%;
+        height: 350px;
+        background: url(https://bizweb.dktcdn.net/100/315/268/themes/857513/assets/bg_brand.png?1666237949898);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 50px auto;
+    }
+    .register-item{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0, 0, 0, 0.5);
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .register{
+        width: 70%;
+        height: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+    }
+    .register h1{
+        font-size: 30px;
+        font-weight: bold;
+        color: #ffffff;
+    }
+    .register p{
+        font-size: 18px;
+        color: #ffffff;
+        margin: 20px 50px;
+    }
+    .register hr{
+        width: 70%;
+        border: 1px solid #ffffff;
+        margin: 30px;
+    }
+    .register input{
+        width: 50%;
+        height: 37px;
+        padding: 10px;
+        outline: none;
+    }
+    .register button{
+        width: 20%;
+        padding: 10px 30px;
+        color:  #ffffff;
+        font-size: 18px;
+        background-color: #00FFCC;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+    .partner-develop{
+        width: 70%;
+        height: 230px;
+        margin: 50px auto;
+    }
+    .partner-develop h1{
+        font-size: 30px;
+        text-align: center;
+        margin: 30px;
+    }
+    .partner-develop-img{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    /*footer*/
+    .text-bumblebee-contact{
+        width: 100%;
+        height: 300px;
+        background: #ffffff;
+    }
+    .bumblebee-contact{
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: left;
+    }
+    #address{
+        width: 30%;
+        height: 250px;
+    }
+    #address h1{
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #32aad6;
+    }
+    #address ul{
+        list-style: none;
+    }
+    #address li a{
+        color: 	#000;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        text-decoration: none;
+        line-height: 40px;
+    }
+    #address ul li i{
+        font-size: 16px;
+        margin-right: 15px;
+        color: 	#000;
+    }
+    .address-icon{
+        margin: 20px;
+    }
+    .address-icon img{
+        width: 30px;
+        height: 30px;
+    }
+    #pay{
+        width: 27%;
+        height: 250px;
+    }
+    #pay h2{
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #32aad6;
+        margin-bottom: 20px;
+    }
+    
+    .pay-list ul{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .pay-list img{
+        width: 70px;
+        height: 40px;
+    }
+    #news{
+        width: 18%;
+        height: 250px;
+    }
+    #news h2{
+        font-size: 20px;
+        color: #32aad6;
+        text-transform: uppercase;
+    }
+    #news ul{
+        list-style: none;
+    }
+    #news ul li a{
+        text-decoration: none;
+        font-size: 15px;
+        color: 	#000;
+        line-height: 40px;
+    }
+    #news ul li i{
+        font-size: 16px;
+        margin-right: 15px;
+        color: 	#000;
+    }
+    #client{
+        width: 23%;
+        height: 250px;
+    }
+    #client h2{
+        font-size: 20px;
+        color: #32aad6;
+        text-transform: uppercase;
+    }
+    #client ul{
+        list-style: none;
+    
+    }
+    #client ul li a{
+        text-decoration: none;
+        font-size: 15px;
+        color: 	#000;
+        line-height: 40px;
+    }
+    #client ul li i{
+        font-size: 16px;
+        margin-right: 15px;
+        color:	#000 ;
+    }
+}

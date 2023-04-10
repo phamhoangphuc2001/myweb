@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/CSS/news.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />  
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <title>News</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+*{
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#header{
+    width: 100%;
+    height: 140px;
+}
+.header-search{
+    background-color: #154054;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 80px;
+}
+#logo a{
+    color: #CC6633;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Rubik Iso', cursive;
+    text-decoration: none;
+    margin-left: 150px;
+}
+.input-search i{
+    position: absolute;
+    font-size: 15px;
+    left: 229%;
+    top: 1px;
+    background: #00FFCC;
+    padding: 16px;
+}
+.input-search {
+    position: relative;
+    margin: 0 100px ;
+}
+.input-search input{
+    outline: none;
+    width: 250%;
+    padding: 10px 20px;
+}
+.Signup-login{
+    margin-left: 400px;
+}
+.Signup-login a{
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+.Signup-login a:hover{
+    color: #00FFCC;
+}
+#toggle{
+    display: none;
+}
+#header hr{
+    border-color: #00FFCC;
+}
+/*menu*/
+ul{
+    list-style: none;
+}
+nav{
+    background-color: #154054;
+    width: 100%;
+    position: relative;
+}
+#main-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#main-menu li a{
+    color: #ffffff;
+    font-size: 18px;
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    transition: 0.25s linear;
+}
+#main-menu li a:hover{
+    color: #000;
+    background-color: #ccc;
+    display: block;
+}
+#main-menu li ::before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 0;
+    height: 5px;
+    background: orangered;
+    transform-origin: left; 
+    transition: width .5s;
+}
+#main-menu li a:hover::before{
+    width: 100%;
+}
+#main-menu li:hover .menu-child{
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu-child{
+    position: absolute;
+    top: 100%;
+    width: 40%;
+    left: 30%;
+    background-color:#154054;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    z-index: 1;
+}
+.menu-child-item{
+    width: 34%;
+}
+.menu-child-item h1{
+    color: #ffff;
+    font-size: 18px;
+    padding: 20px;
+    background-color:#3366CC;
+    text-transform: uppercase;
+}
+#toggle{
+    display: none;
+}
+
+
+/*footer*/
+.text-bumblebee-contact{
+    width: 100%;
+    height: 300px;
+    background: #ffffff;
+}
+.bumblebee-contact{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#address{
+    width: 30%;
+    height: 250px;
+}
+#address h1{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #32aad6;
+}
+#address ul{
+    list-style: none;
+}
+#address li a{
+    color: 	#000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 40px;
+}
+#address ul li i{
+    font-size: 16px;
+    margin-right: 15px;
+    color: 	#000;
+}
+.address-icon{
+    margin: 20px;
+}
+.address-icon img{
+    width: 30px;
+    height: 30px;
+}
+#pay{
+    width: 27%;
+    height: 250px;
+    text-align: center;
+}
+#pay h2{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #32aad6;
+    margin-bottom: 20px;
+}
+
+.pay-list ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.pay-list img{
+    width: 70px;
+    height: 40px;
+}
+#news{
+    width: 18%;
+    height: 250px;
+}
+#news h2{
+    font-size: 20px;
+    color: #32aad6;
+    text-transform: uppercase;
+}
+#news ul{
+    list-style: none;
+}
+#news ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: 	#000;
+    line-height: 40px;
+}
+#news ul li i{
+    font-size: 16px;
+    margin-right: 15px;
+    color: 	#000;
+}
+#client{
+    width: 23%;
+    height: 250px;
+}
+#client h2{
+    font-size: 20px;
+    color: #32aad6;
+    text-transform: uppercase;
+}
+#client ul{
+    list-style: none;
+
+}
+#client ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: 	#000;
+    line-height: 40px;
+}
+#client ul li i{
+    font-size: 16px;
+    margin-right: 15px;
+    color:	#000 ;
+}
+
+
+@media screen and (min-width:200px){
+    #main-menu{
+        flex-direction: column;
+        text-align: center;
+    }
+    nav{
+        display: none;
+    }
+    #header{
+        width: 100%;
+        height: 700px;
+    }
+    .header-search{
+        height: 180px;
+    }
+    #logo a{
+        margin-left: 0px;
+    }
+    .input-search i{
+        left: 0;
+        top: 0px;
+        background: #00FFCC;
+        padding: 16px;
+    }
+    .input-search {
+        margin: 0 0px ;
+        display: flex;
+    }
+    .input-search input{
+        width: 100%;
+        padding: 10px 90px;
+    }
+    .Signup-login{
+        margin-left: 0px;
+    }
+    #header hr{
+        border-color: #00FFCC;
+    }
+    #toggle{
+        display: block;
+    }
+    #toggle i{
+        color: #ffffff;
+        font-size: 30px;
+        cursor: pointer;
+        padding: 10px;
+        margin-left: 100px;
+    }
+    #toggle i:hover{
+        background-color: #0066FF;
+    }
+    /*menu*/
+    .menu-child{
+        width: 100%;
+        left: 0;
+        top: 100%;
+    }
+    .menu-child-item h1{
+        font-size: 18px;
+        padding: 7px;
+    }
+    /*footer*/
+    .text-bumblebee-contact{
+        width: 100%;
+        height: 1000px;
+        background: #ffffff;
+        text-align: center;
+    }
+    .bumblebee-contact{
+        width: 100%;
+        height: 100%;  
+    }
+    #address{
+        width: 100%;
+        height: 200px;
+    }
+    #pay{
+        width: 100%;
+        height: 250px;
+    }
+    #news{
+        width: 100%;
+        height: 250px;
+    }
+    #client{
+        width: 100%;
+        height: 250px;
+    }
+}
+
+@media screen and (min-width:756px){
+    #header{
+        width: 100%;
+        height: 820px;
+    }
+    .header-search{
+        height: 200px;
+        flex-direction: column;
+    }
+    #logo a{
+        margin-left: 0px;
+    }
+    .input-search i{
+        left: 0;
+        top: 0px;
+        padding: 16px;
+    }
+    .input-search {
+        margin: 15px 0px;
+    }
+    .input-search input{
+        width: 100%;
+        padding: 10px 190px;
+    }
+    .Signup-login{
+        margin-left: 0px;
+    }
+    #toggle{
+        display: none;
+    }
+    nav{
+        display: block;
+    }
+    /*menu*/
+    #main-menu{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .menu-child{
+        width: 60%;
+        left: 22%;
+    }
+    .menu-child-item{
+        width: 34%;
+    }
+    #toggle{
+        display: none;
+    }
+    /*footer*/
+    .text-bumblebee-contact{
+        width: 100%;
+        height: 520px;
+        background: #ffffff;
+    }
+    .bumblebee-contact{
+        width: 100%;
+        height: 100%;
+    }
+    #address{
+        width: 49%;
+        height: 250px;
+    }
+    #address h1{
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #32aad6;
+    }
+    #address ul{
+        list-style: none;
+    }
+    #address li a{
+        font-size: 16px;
+        text-decoration: none;
+        line-height: 40px;
+    }
+    #address ul li i{
+        font-size: 16px;
+        margin-right: 15px;
+        color: 	#000;
+    }
+    .address-icon{
+        margin: 20px;
+    }
+    .address-icon img{
+        width: 30px;
+        height: 30px;
+    }
+    #pay{
+        width: 49%;
+        height: 250px;
+    }
+    #pay h2{
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #32aad6;
+        margin-bottom: 20px;
+    }
+    
+    .pay-list ul{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .pay-list img{
+        width: 70px;
+        height: 40px;
+    }
+    #news{
+        width: 49%;
+        height: 250px;
+    }
+    #news h2{
+        font-size: 20px;
+        color: #32aad6;
+        text-transform: uppercase;
+    }
+    #news ul{
+        list-style: none;
+    }
+    #news ul li a{
+        text-decoration: none;
+        font-size: 15px;
+        color: 	#000;
+        line-height: 40px;
+    }
+    #news ul li i{
+        font-size: 16px;
+        margin-right: 15px;
+        color: 	#000;
+    }
+    #client{
+        width: 49%;
+        height: 250px;
+    }
+    #client h2{
+        font-size: 20px;
+        color: #32aad6;
+        text-transform: uppercase;
+    }
+    #client ul{
+        list-style: none;
+    
+    }
+    #client ul li a{
+        text-decoration: none;
+        font-size: 15px;
+        color: 	#000;
+        line-height: 40px;
+    }
+    #client ul li i{
+        font-size: 16px;
+        margin-right: 15px;
+        color:	#000 ;
+    }
+}
+
+@media screen and (min-width:1024px){
+    #header{
+        width: 100%;
+        height: 950px;
+    }
+    .header-search{
+        background-color: #154054;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        height: 80px;
+    }
+    #logo a{
+        color: #CC6633;
+        font-size: 30px;
+        text-transform: uppercase;
+        font-family: 'Rubik Iso', cursive;
+        text-decoration: none;
+        margin-right: 50px;
+    }
+    .input-search i{
+        position: absolute;
+        font-size: 16px;
+        left:92%;
+        top: 0px;
+        background: #00FFCC;
+        padding: 16px;
+    }
+    .input-search {
+        position: relative;
+        margin: 0 0px ;
+    }
+    .input-search input{
+        outline: none;
+        width: 600px;
+        padding: 10px 20px;
+    }
+    .Signup-login{
+        margin-left:50px;
+    }
+    .Signup-login a{
+        font-size: 20px;
+        color: #ffffff;
+        text-decoration: none;
+        margin: 0 5px;
+    }
+    .Signup-login a:hover{
+        color: #00FFCC;
+    }
+    #toggle{
+        display: none;
+    }
+    #header hr{
+        border-color: #00FFCC;
+    }
+    /*menu*/
+    ul{
+        list-style: none;
+    }
+    nav{
+        background-color: #154054;
+        width: 100%;
+        position: relative;
+    }
+    #main-menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    #main-menu li a{
+        color: #ffffff;
+        font-size: 18px;
+        display: inline-block;
+        padding: 15px 20px;
+        text-decoration: none;
+        position: relative;
+        cursor: pointer;
+        transition: 0.25s linear;
+    }
+    #main-menu li a:hover{
+        color: #000;
+        background-color: #ccc;
+        display: block;
+    }
+    #main-menu li ::before{
+        content: '';
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        width: 0;
+        height: 5px;
+        background: orangered;
+        transform-origin: left; 
+        transition: width .5s;
+    }
+    #main-menu li a:hover::before{
+        width: 100%;
+    }
+    #main-menu li:hover .menu-child{
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .menu-child{
+        position: absolute;
+        top: 100%;
+        width: 40%;
+        left: 30%;
+        background-color:#154054;
+        display: flex;
+        opacity: 0;
+        visibility: hidden;
+        text-align: center;
+        z-index: 1;
+    }
+    .menu-child-item{
+        width: 34%;
+    }
+    .menu-child-item h1{
+        color: #ffff;
+        font-size: 18px;
+        padding: 20px;
+        background-color:#3366CC;
+        text-transform: uppercase;
+    }
+    #toggle{
+        display: none;
+    }
+    /*footer*/
+    .text-bumblebee-contact{
+        width: 100%;
+        height: 300px;
+        background: #ffffff;
+    }
+    .bumblebee-contact{
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: left;
+    }
+    #address{
+        width: 30%;
+        height: 250px;
+    }
+    #address h1{
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #32aad6;
+    }
+    #address ul{
+        list-style: none;
+    }
+    #address li a{
+        color: 	#000;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        text-decoration: none;
+        line-height: 40px;
+    }
+    #address ul li i{
+        font-size: 16px;
+        margin-right: 15px;
+        color: 	#000;
+    }
+    .address-icon{
+        margin: 20px;
+    }
+    .address-icon img{
+        width: 30px;
+        height: 30px;
+    }
+    #pay{
+        width: 27%;
+        height: 250px;
+    }
+    #pay h2{
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #32aad6;
+        margin-bottom: 20px;
+    }
+    
+    .pay-list ul{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .pay-list img{
+        width: 70px;
+        height: 40px;
+    }
+    #news{
+        width: 18%;
+        height: 250px;
+    }
+    #news h2{
+        font-size: 20px;
+        color: #32aad6;
+        text-transform: uppercase;
+    }
+    #news ul{
+        list-style: none;
+    }
+    #news ul li a{
+        text-decoration: none;
+        font-size: 15px;
+        color: 	#000;
+        line-height: 40px;
+    }
+    #news ul li i{
+        font-size: 16px;
+        margin-right: 15px;
+        color: 	#000;
+    }
+    #client{
+        width: 23%;
+        height: 250px;
+    }
+    #client h2{
+        font-size: 20px;
+        color: #32aad6;
+        text-transform: uppercase;
+    }
+    #client ul{
+        list-style: none;
+    
+    }
+    #client ul li a{
+        text-decoration: none;
+        font-size: 15px;
+        color: 	#000;
+        line-height: 40px;
+    }
+    #client ul li i{
+        font-size: 16px;
+        margin-right: 15px;
+        color:	#000 ;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header-search">
+            <div id="logo">
+                <a href="/index.html">Sabo Travel</a>
+            </div>
+            <div class="input-search">
+                <input type="text" placeholder="Từ khoá tìm kiếm..." >
+                <a href=""><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a>
+            </div>
+            <div class="Signup-login">
+                <a href="#">Đăng kí</a> 
+                <a href="#">/</a>
+                <a href="#">Đăng nhập</a>
+            </div>
+            <div id="toggle">
+                <i class="fa-sharp fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <nav>
+            <ul id="main-menu">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li>
+                    <a href="#">Giới thiệu</a>
+                </li>
+                <li>
+                    <a href="#">Du lịch trong nước</a>
+                    <div class="menu-child">
+                        <div class="menu-child-item">
+                            <h1>Miền Bắc</h1>
+                            <ul class="menu-child-list">
+                                <li><a href="#">Hà Nội</a></li>
+                                <li><a href="#">Sapa</a></li>
+                                <li><a href="#">Vịnh Hạ Long</a></li>
+                                <li><a href="#">Hà Giang</a></li>
+                                <li><a href="#">Ninh Bình</a></li>
+                                <li><a href="#">Bắc Giang</a></li>
+                                <li><a href="#">Lạng Sơn</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu-child-item">
+                            <h1>Miền Trung</h1>
+                            <ul class="menu-child-list">
+                                <li><a href="#">Quảng Bình</a></li>
+                                <li><a href="#">Huế</a></li>
+                                <li><a href="#">Đà Nẵng</a></li>
+                                <li><a href="#">Hà Tỉnh</a></li>
+                                <li><a href="#">Bình Dịnh</a></li>
+                                <li><a href="#">Nha Trang</a></li>
+                                <li><a href="#">Phú Yên</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu-child-item">
+                            <h1>Miền Nam</h1>
+                            <ul class="menu-child-list"> 
+                                <li><a href="#">Đà Lạt</a></li>
+                                <li><a href="#">Phan Thiết</a></li>
+                                <li><a href="#">Vũng Tàu</a></li>
+                                <li><a href="#">Đồng Tháp</a></li>
+                                <li><a href="#">Phú Quốc</a></li>
+                                <li><a href="#">Cần Thơ</a></li>
+                                <li><a href="#">Cà Mau</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Du lịch nước ngoài</a>
+                    <div class="menu-child">
+                        <div class="menu-child-item">
+                            <h1>Châu Á</h1>
+                            <ul class="menu-child-list">
+                                <li><a href="#">Hàn Quốc</a></li>
+                                <li><a href="#">Nhật Bản</a></li>
+                                <li><a href="#">Trung Quốc</a></li>
+                                <li><a href="#">Thái Lan</a></li>
+                                <li><a href="#">Singapore</a></li>
+                                <li><a href="#">Malaysia</a></li>
+                                <li><a href="#">Indonensia</a></li>
+                        </div>
+                        <div class="menu-child-item">
+                            <h1>Châu Âu</h1>
+                            <ul class="menu-child-list">
+                                <li><a href="#">Ý</a></li>
+                                <li><a href="#">Pháp</a></li>
+                                <li><a href="#">Anh</a></li>
+                                <li><a href="#">Đức</a></li>
+                                <li><a href="#">Tây Ban Nha</a></li>
+                                <li><a href="#">Hà lan</a></li>
+                                <li><a href="#">Thuỵ Sĩ</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu-child-item">
+                            <h1>Châu Mỹ</h1>
+                            <ul class="menu-child-list"> 
+                                <li><a href="#">Mỹ</a></li>
+                                <li><a href="#">Canada</a></li>
+                                <li><a href="#">Agentina</a></li>
+                                <li><a href="#">Brazil</a></li>
+                                <li><a href="#">Colombia</a></li>
+                                <li><a href="#">Chile</a></li>
+                                <li><a href="#">Uruguay</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="news.html">Tin tức</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+            </ul>
+        </nav>
+        </div>
+        <article>
+            <div class="container">
+                <h1 class="text-center p-5 text-primary">Chương trình khuyến mãi Hot</h1>
+                <div class="row" >
+                    <div class="col">
+                        <center>
+                        <div class="card" style="width:20rem; ">
+                            <img src="/cuoi-300x300.jpg"  height="300px" class="card-img-top"
+                                alt="ERROR">
+                            <div class="card-body">
+                                <h5 class="card-title text-center"><b>Chụp ảnh cưới cầu tình yêu </b></h5>
+                                <div>
+                                    <p class="text-center fw-bold"><del class="text-dark">5.000.000₫</del> <b class="text-danger">4.500.000₫</b></p>
+                                </div>
+                                <p class="text-center card-text">
+                                    Thiên đường tình yêu” là mỹ từ xưng tụng Đà Nẵng quả không sai. Bờ biển buông lơi, uốn cong theo từng cơn sóng vỗ được điểm tô bởi những hàng cọ, hàng dừa
+                                </p>                            
+                                <center><a href="#" class="btn btn-success">Xem Chi Tiết</a></center>
+                            </div>
+                        </div>
+                        </center>
+                    </div>
+                    <div class="col">
+                        <center>
+                        <div class="card" style="width:20rem; ">
+                            <img src="/hoa-dang-300x300.jpg " height="300px" class="card-img-top"
+                                alt="ERROR">
+                            <div class="card-body">
+                                <h5 class="card-title text-center"><b>Lễ hội hoa đăng Hội An</b></h5>
+                                <div>
+                                    <p class="text-center fw-bold"><del class="text-dark">1.200.000₫</del>    <b class="text-danger">1.000.000₫</b></p>
+                                </div>
+                                <p class="text-center card-text">
+                                    Thiên đường tình yêu” là mỹ từ xưng tụng Đà Nẵng quả không sai. Bờ biển buông lơi, uốn cong theo từng cơn sóng vỗ được điểm tô bởi những hàng cọ, hàng dừa
+                                </p>                            
+                                <center><a href="#" class="btn btn-success">Xem Chi Tiết</a></center>
+                            </div>
+                        </div>
+                        </center>
+                    </div>
+                    <div class="col">
+                        <center>
+                        <div class="card" style="width:20rem; ">
+                            <img src="/den-long-300x300.jpg" height="300px" class="card-img-top"
+                                alt="ERROR">
+                            <div class="card-body">
+                                <h5 class="card-title text-center"><b>Phố đèn lồng Hội An </b></h5>
+                                <div>
+                                    <p class="text-center fw-bold"><del class="text-dark">7.500.000₫</del>    <b class="text-danger">6.800.000₫</b></p>
+                                </div>
+                                <p class="text-center card-text">
+                                    Thiên đường tình yêu” là mỹ từ xưng tụng Đà Nẵng quả không sai. Bờ biển buông lơi, uốn cong theo từng cơn sóng vỗ được điểm tô bởi những hàng cọ, hàng dừa
+                                </p>                            
+                                <center><a href="#" class="btn btn-success">Xem Chi Tiết</a></center>
+                            </div>
+                        </div>
+                    </center>
+                    </div>
+                    <div class="col">
+                        <center>
+                        <div class="card" style="width:20rem; ">
+                            <img src="/doi-che-300x300.jpg" height="300px" class="card-img-top"
+                                alt="ERROR">
+                            <div class="card-body">
+                                <h5 class="card-title text-center"><b>Tham quan đồi chè Đông Giang</b></h5>
+                                <div>
+                                    <p class="text-center fw-bold"><del class="text-dark">5.500.000₫</del>    <b class="text-danger">5.000.000₫</b></p>
+                                </div>
+                                <p class="text-center card-text">
+                                    Thiên đường tình yêu” là mỹ từ xưng tụng Đà Nẵng quả không sai. Bờ biển buông lơi, uốn cong theo từng cơn sóng vỗ được điểm tô bởi những hàng cọ, hàng dừa
+                                </p>                            
+                                <center><a href="#" class="btn btn-success">Xem Chi Tiết</a></center>
+                            </div>
+                        </div>
+                        </center>
+                    </div>
+                    <div class="col">
+                        <center>
+                        <div class="card" style="width:20rem; ">
+                            <img src="/2-19-300x300.jpg" height="300px" class="card-img-top"
+                                alt="ERROR">
+                            <div class="card-body">
+                                <h5 class="card-title text-center"><b>Tour ẩm thực xứ Quảng</b></h5>
+                                <div>
+                                    <p class="text-center fw-bold"><del class="text-dark">1.800.000₫</del>    <b class="text-danger">1.500.000₫</b></p>
+                                </div>
+                                <p class="text-center card-text">
+                                    Thiên đường tình yêu” là mỹ từ xưng tụng Đà Nẵng quả không sai. Bờ biển buông lơi, uốn cong theo từng cơn sóng vỗ được điểm tô bởi những hàng cọ, hàng dừa
+                                </p>                            
+                                <center><a href="#" class="btn btn-success">Xem Chi Tiết</a></center>
+                            </div>
+                        </div>
+                    </center>
+                    </div>
+                    <div class="col">
+                        <center>
+                        <div class="card" style="width:20rem; ">
+                            <img src="/bana5-300x300.jpg" height="300px"  class="card-img-top"
+                                alt="ERROR">
+                            <div class="card-body">
+                                <h5 class="card-title text-center"><b>Tour thượng ngoạn Bà Nà Hill</b> </h5>
+                                <div>
+                                    <p class="text-center fw-bold"><del class="text-dark">10.000.000₫</del>    <b class="text-danger">9.500.000₫</b></p>
+                                </div>
+                                <p class="text-center card-text">
+                                    Thiên đường tình yêu” là mỹ từ xưng tụng Đà Nẵng quả không sai. Bờ biển buông lơi, uốn cong theo từng cơn sóng vỗ được điểm tô bởi những hàng cọ, hàng dừa
+                                </p>                            
+                                <center><a href="#" class="btn btn-success">Xem Chi Tiết</a></center>
+                            </div>
+                        </div>
+                        </center>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <h1 class="text-center p-5 text-primary">Tin tức & kinh nghiệm du lịch</h1>
+                <div class="row mb-5">
+                    <div class="col ">
+                        <center>
+                        <div class="card" style="width:20rem; ">
+                            <img src="/lang-hoa.jpg"  height="300px" class="card-img-top"
+                                alt="ERROR">
+                            <div class="card-body">
+                                <h5 class="card-title text-center"><b>Du lịch Phú Quốc: Cẩm nang từ A đến Z </b></h5>
+                                <p class="text-center card-text">
+                                    Tổng quan du lịch Phú Quốc Một góc Phú Quốc (Ảnh: khoanhkhacvietnam.vn) Phú Quốc là quần [...]
+                                </p>                            
+                                <center><a href="http://mauweb.monamedia.net/travelvn/du-lich-phu-quoc-cam-nang-tu-a-den-z/" class="btn btn-primary">Đọc thêm</a></center>
+                            </div>
+                        </div>
+                    </center>
+                    </div>
+                    <div class="col">
+                        <center>
+                        <div class="card" style="width:20rem; ">
+                            <img src="/food-300x208.jpg" height="300px" class="card-img-top"
+                                alt="ERROR">
+                            <div class="card-body">
+                                <h5 class="card-title text-center"><b>Du lịch Đà Nẵng : 10 điểm du lịch tham quan hấp dẫn nhất </b></h5>
+                                <p class="text-center card-text">
+                                    1. Vinpearl Land Toạ lạc trên đảo Hòn Tre với những bãi biển trong xanh [...]
+                                </p>                            
+                                <center><a href="http://mauweb.monamedia.net/travelvn/du-lich-nha-trang-10-diem-du-lich-tham-quan-hap-dan-nhat/" class="btn btn-primary">Đọc thêm</a></center>
+                            </div>
+                        </div>
+                        </center>
+                    </div>
+                    <div class="col">
+                        <center>
+                        <div class="card" style="width:20rem; ">
+                            <img src="/cu-lao-cham-300x200.jpg" height="300px" class="card-img-top"
+                                alt="ERROR">
+                            <div class="card-body">
+                                <h5 class="card-title text-center"><b>Du lịch Vũng Tàu: Cẩm nang từ A đến Z </b></h5>
+                                <p class="text-center card-text">
+                                    Tổng quan du lịch Vũng Tàu Cách trung tâm thành phố Hồ Chí Minh chỉ khoảng [...]
+                                </p>                            
+                                <center><a href="http://mauweb.monamedia.net/travelvn/du-lich-vung-tau-cam-nang-tu-a-den-z/" class="btn btn-primary">Đọc thêm</a></center>
+                            </div>
+                        </div>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <footer>
+            <div class="text-bumblebee-contact">
+                <div class="bumblebee-contact text-address">
+                    <div id="address">
+                        <h1>Thông tin liên hệ</h1>
+                            <ul>
+                                <li><i class="fa-solid fa-location-dot"></i><a href="#">Địa chỉ: 437 Nguyễn Văn Công, Phường 2, Gò Vấp, TPHCM</a></li>
+                                <li><i class="fa-solid fa-phone"></i><a href="#">Hotline: 0333573303</a></li>
+                                <li><i class="fa-solid fa-envelope"></i><a href="#">Email: sabotravel@gmail.com</a></li>
+                            </ul>
+                    </div> 
+                    <div id="pay">
+                        <h2>Kết nối với chúng tôi</h2>
+                        <div class="address-icon">
+                            <img src="https://png.pngtree.com/png-clipart/20190520/original/pngtree-facebook-social-media-icon-design-template-vector-png-image_3654755.png" alt="">
+                            <img src="https://png.pngtree.com/png-clipart/20220810/original/pngtree-instagram-icon-instagram-logo-picture-image_3584852.png" alt="">
+                            <img src="https://png.pngtree.com/png-clipart/20190613/original/pngtree-google-plus-logo-icon-png-image_3570309.jpg" alt="">
+                            <img src="https://png.pngtree.com/png-clipart/20190516/original/pngtree-whatsapp-icon-png-image_3584845.jpg" alt="">
+                        </div> 
+                        <h2>Chấp nhận thanh toán</h2>
+                        <div class="pay-list">
+                            <ul>
+                                <li><img src="https://bizweb.dktcdn.net/100/315/268/themes/857513/assets/img_payment_1.png?1679907698369" alt=""></li>
+                                <li><img src="https://bizweb.dktcdn.net/100/315/268/themes/857513/assets/img_payment_2.png?1679907698369" alt=""></li>
+                                <li><img src="https://bizweb.dktcdn.net/100/315/268/themes/857513/assets/img_payment_3.png?1679907698369" alt=""></li>
+                                <li><img src="https://bizweb.dktcdn.net/100/315/268/themes/857513/assets/img_payment_4.png?1679907698369" alt=""></li>
+                                <li><img src="https://bizweb.dktcdn.net/100/315/268/themes/857513/assets/img_payment_5.png?1679907698369" alt=""></li>
+                                <li><img src="https://bizweb.dktcdn.net/100/315/268/themes/857513/assets/img_payment_6.png?1679907698369" alt=""></li>
+                                <li><img src="https://bizweb.dktcdn.net/100/315/268/themes/857513/assets/img_payment_7.png?1679907698369" alt=""></li>
+                                <li><img src="https://bizweb.dktcdn.net/100/315/268/themes/857513/assets/img_payment_8.png?1679907698369" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="news">
+                        <h2>Tin tức</h2>
+                        <ul>
+                            <li><a href="">Bản tin Du Lịch Việt</a></li>
+                            <li><a href="">Cẩm nang du lịch</a></li>
+                            <li><a href="">Khám phá du lịch</a></li>
+                            <li><a href="">Sự kiện du lịch</a></li>
+                            <li><a href="">Tuyển dụng Du Lịch</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div id="client">
+                        <h2>Góc khách hàng</h2>
+                        <ul>
+                            <li><i class="fa-solid fa-lock"></i><a href="#">Điều kiện & điều khoản</a></li>
+                            <li><i class="fa-solid fa-lock"></i><a href="#">Quyền riêng tư</a></li>
+                            <li><i class="fa-solid fa-lock"></i><a href="#">Chính sách bảo mật và thông tin</a></li>
+                            <li><i class="fa-solid fa-comments"></i><a href="#">Ý kiến khách hàng</a></li>
+                            <li><i class="fa-solid fa-cart-shopping"></i><a href="#">Phương thức thanh toán</a></li>
+                        </ul>
+                    </div>  
+                </div>
+            </div>
+    </footer>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('#toggle').click(function(){
+                $('nav').slideToggle();
+            })
+        });
+    </script>
+</body>
+</html>
